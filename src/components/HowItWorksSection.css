@@ -1,0 +1,130 @@
+.how-it-works-section {
+    padding: 3.125rem 1.25rem; /* Using rem for padding */
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 2.1875rem; /* Using rem for margin-bottom */
+}
+
+.how-it-work-title {
+    color: #ff9933;
+    font-size: 1.05rem; /* Using rem for font-size */
+    margin-bottom: 0.375rem; /* Using rem for margin-bottom */
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.section-main-title {
+    font-size: 2.6rem; /* Using rem for font-size */
+    line-height: 1.2;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px; /* Keep px for max-width */
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px; /* Keep px for padding */
+}
+
+.step-connector-line {
+    position: absolute;
+    top: 50%; /* Keep percentage for position */
+    left: 50px; /* Keep px for position */
+    right: 50px; /* Keep px for position */
+    width: 100%;
+    max-width: 800px; /* Max width in px */
+    height: 2px; /* Keep px for height */
+    border-top: 2px dotted #ff9933;
+    transform: translateY(-50%); /* Keep percentage for transform */
+    z-index: -1;
+}
+
+.step-connector {
+    width: 15px; /* Keep px for width/height */
+    height: 15px;
+    background-color: #ff9933;
+    border-radius: 50%;
+    margin: 0 30px; /* Keep px for margin */
+}
+
+.step-connector-end {
+    width: 15px; /* Keep px for width/height */
+    height: 15px;
+    background-color: #ff9933;
+    border-radius: 50%;
+    margin-left: 50px; /* Keep px for margin-left */
+}
+
+.steps-container > *:first-child .step-connector-line {
+    display: none;
+}
+.steps-container > *:last-child .step-connector {
+    display: none;
+}
+
+
+@media (max-width: 960px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0; /* Keep px for padding */
+        padding-right: 0;
+    }
+    .step-connector-line, .step-connector, .step-connector-end {
+        display: none;
+    }
+    .step-card {
+        margin-bottom: 40px; /* Keep px for margin-bottom */
+    }
+    .step-card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-main-title {
+        font-size: 2.4rem; /* Using rem for font-size */
+    }
+    .step-card {
+        width: 90%; /* Keep percentage for width */
+        max-width: 350px; /* Keep px for max-width */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-main-title {
+        font-size: 2.0rem; /* Using rem for font-size */
+    }
+    .how-it-work-title {
+        font-size: 0.9rem; /* Using rem for font-size */
+    }
+    .step-description {
+        font-size: 0.75rem; /* Using rem for font-size */
+    }
+    .step-card {
+        width: 100%; /* Keep percentage for width */
+        max-width: none;
+        margin-bottom: 30px; /* Keep px for margin-bottom */
+    }
+    .step-card:last-child {
+        margin-bottom: 0;
+    }
+    .how-it-works-section {
+        padding: 2.5rem 0.9375rem; /* Using rem for padding */
+    }
+}
+
+@media (max-width: 400px) { /* For very small screens */
+    .section-main-title {
+        font-size: 1.8rem; /* Using rem for font-size */
+    }
+    .step-description {
+        font-size: 0.75rem; /* Using rem for font-size */
+    }
+}

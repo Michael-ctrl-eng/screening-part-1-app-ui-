@@ -1,0 +1,81 @@
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 260px; /* Keep px for width */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem; /* Using rem for border-radius */
+    transition: transform 0.3s ease-in-out;
+}
+
+.step-card:hover {
+    transform: scale(1.05);
+}
+
+.diamond-shape-container {
+    margin-bottom: 20px; /* Keep px for margin */
+}
+
+.diamond-shape {
+    position: relative;
+    width: 140px; /* Keep px for width/height */
+    height: 140px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    overflow: hidden;
+    border: 2px dotted #ff9933;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(255, 153, 51, 0.3);
+}
+
+.step-number-circle {
+    position: absolute;
+    top: -12px; /* Keep px for position */
+    left: 50%; /* Keep percentage for position */
+    transform: translateX(-50%); /* Keep percentage for transform */
+    background-color: #ff9933;
+    color: white;
+    width: 2rem; /* Using rem for width/height */
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9375rem; /* Using rem for font-size */
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.step-number {
+    /* Already styled in container */
+}
+
+.step-image {
+    position: absolute;
+    top: 50%; /* Keep percentage for position */
+    left: 50%; /* Keep percentage for position */
+    transform: translate(-50%, -50%) rotate(-45deg); /* Keep percentage for transform */
+    max-width: 65%; /* Keep percentage for max width/height */
+    max-height: 65%;
+    object-fit: contain;
+}
+
+.step-content {
+    padding: 0 15px; /* Keep px for padding */
+}
+
+.step-title {
+    font-size: 1.1rem; /* Using rem for font-size */
+    margin-bottom: 0.5rem; /* Using rem for margin-bottom */
+    color: #333;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.step-description {
+    font-size: 0.875rem; /* Using rem for font-size */
+    color: #777;
+    line-height: 1.6;
+    font-family: 'Nunito Sans', sans-serif;
+}
